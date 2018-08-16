@@ -1,0 +1,19 @@
+<view class="dialog-wrapper">
+	<view class="dialog-dialog">
+		<view class="dialog-content">
+			<view class="title">
+				<slot name="title"></slot>
+			</view>
+			<view class="subtitle">
+				<slot name="subtitle"></slot>
+			</view>
+		</view>
+		<input placeholder="{{placeholder}}" class="dialog-input" value="{{value}}" bindinput="getValue" />
+		<view class="action-bar">
+			<view catchtap="hide" class="reset-btn" data-type="more">取消</view>
+			<view catchtap="submit" class="confirm-btn" data-type="more" data-id="{{id}}">提交</view>
+		</view>
+	</view>
+	<view class="dialog-mask" catchtap="onHideDialog">
+	</view>
+</view>
