@@ -1,6 +1,6 @@
 {
   "name": "@anka-dev/dialog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dialog component for wechat miniprogram.",
   "main": "miniprogram_dist/index.js",
   "scripts": {
